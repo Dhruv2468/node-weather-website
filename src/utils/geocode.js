@@ -1,7 +1,7 @@
 const request = require('request')
 
 const geocode = (address, callback) => {
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ encodeURIComponent(address) +"&appid=7961b9358832ee8a789db401926da46e&units=metric"
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ encodeURIComponent(address) +"&appid=e&units=metric"
 
     request({ url, json: true }, (error, { body }) => {
         if (error) {
